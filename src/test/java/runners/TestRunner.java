@@ -9,8 +9,10 @@ import cucumber.api.junit.Cucumber;
 		glue= {"stepDefinitions"}, 
 		plugin = {
 				"pretty", 
-				"html:target/cucumber-htmlreport", 
-				"json:target/cucumber-report.json",			
+				//"html:target/cucumber-htmlreport", 
+				//"json:target/cucumber-report.json",	
+				"html:cucumber-htmlreport", 
+				"json:cucumber-report.json",
 				"com.cucumber.listener.ExtentCucumberFormatter:target/ExtendReport.html"}, tags= {"@all"}
 		)
 
